@@ -379,9 +379,9 @@ const StudentDashboard = () => {
                             <Clock className="h-6 w-6 text-[#0e7490]" />
                             <span className="text-xs font-semibold text-[#0e7490]">Revisions</span>
                         </Link>
-                        <Link to="/student/doubt-support" className="flex flex-col items-center gap-2 rounded-2xl bg-[#dcfce7] p-5 text-center transition hover:-translate-y-1 hover:shadow-lg">
+                        <Link to="/student/chatbot" className="flex flex-col items-center gap-2 rounded-2xl bg-[#dcfce7] p-5 text-center transition hover:-translate-y-1 hover:shadow-lg">
                             <MessageSquare className="h-6 w-6 text-[#166534]" />
-                            <span className="text-xs font-semibold text-[#166534]">Doubt Solver</span>
+                            <span className="text-xs font-semibold text-[#166534]">AI Chatbot</span>
                         </Link>
                     </div>
                 </section>

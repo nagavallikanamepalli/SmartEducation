@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import DashboardLayout from '../components/Layout/DashboardLayout';
 import { useAuth } from '../context/AuthContext';
 import { gamificationAPI } from '../services/api';
-import { Flame, Trophy, BookOpen, RotateCcw, Star, Award, Calendar } from 'lucide-react';
+import { Flame, Trophy, BookOpen, RotateCcw, Star, Award, Calendar, MessageSquare } from 'lucide-react';
 
 // ─── Activity Heatmap Component (GitHub/LeetCode style) ────────
 const ActivityHeatmap = ({ data }) => {
@@ -230,6 +231,23 @@ const StudentProfile = () => {
                         </div>
                     </div>
                     <ActivityHeatmap data={data?.heatmap || []} />
+                </section>
+
+                {/* Chatbot Shortcut */}
+                <section className="rounded-[28px] bg-gradient-to-r from-[#dcfce7] to-[#ecfeff] p-6 shadow-xl ring-1 ring-[#bbf7d0]">
+                    <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                        <div>
+                            <h2 className="text-lg font-semibold text-[#14532d]">Need help now?</h2>
+                            <p className="text-sm text-[#166534]">Open AI Chatbot directly from your profile to ask doubts and revise faster.</p>
+                        </div>
+                        <Link
+                            to="/student/chatbot"
+                            className="inline-flex items-center gap-2 rounded-xl bg-[#166534] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#14532d]"
+                        >
+                            <MessageSquare className="h-4 w-4" />
+                            Open AI Chatbot
+                        </Link>
+                    </div>
                 </section>
 
                 {/* Badges Section */}
