@@ -10,7 +10,6 @@ import {
     UserCog,
     BookOpen,
     FileText,
-    Sparkles,
     Map,
     CalendarClock,
     TrendingUp,
@@ -49,7 +48,6 @@ const Sidebar = () => {
                     { path: '/student/knowledge-map', icon: Map, label: 'Knowledge Map' },
                     { path: '/student/revisions', icon: CalendarClock, label: 'Revisions' },
                     { path: '/student/progress', icon: TrendingUp, label: 'Progress' },
-                    { path: '/student/doubt-support', icon: Sparkles, label: 'AI Doubt Support' },
                     { path: '/student/chatbot', icon: MessageSquare, label: 'AI Chatbot' }
                 ];
             default:
